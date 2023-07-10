@@ -18,5 +18,9 @@ func main() {
 	fmt.Println("Please enter a URL to shorten:  ")
 	fmt.Scanf("%s", &url)
 
-	fmt.Println("URL to shorten: ", url)
+	first := entry{originalUrl: url, shortenedUrl: "https://short.en/url"}
+
+	list := data{[]entry{first}}
+
+	fmt.Println("URL to shorten: ", list)
 }
