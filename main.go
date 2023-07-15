@@ -22,5 +22,5 @@ func main() {
 
 	list := data{[]entry{first}}
 
-	fmt.Println("URL to shorten: ", list)
+	list.printEntries()
 }
